@@ -1,0 +1,65 @@
+/* Základní styl progress baru */
+progress {
+  width: 80%;
+  height: 2px; /* Užší výška progress baru */
+  -webkit-appearance: none; /* Zruší výchozí vzhled v prohlížečích Webkit */
+  appearance: none;
+  margin-top: 5px;
+}
+
+/* Styl pro Webkit prohlížeče (Chrome, Safari) */
+progress::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+progress::-webkit-progress-value {
+  transition: width 0.3s ease-in-out; /* Plynulá animace */
+}
+
+.progressBar {
+  width: "80%";
+  transition: "width 0.3s";
+  margin: "0 auto";
+  height: "4px";
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: "0px";
+}
+
+.event-link {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+  padding: 10px 20px;
+  text-align: center;
+}
+.event-links-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.event-title {
+  font-size: 28.5px;
+}
+.event-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.event-link:hover {
+  color: #ffffff; /* Barva při hoveru */
+}
+
+.event-link.active {
+  color: white; /* Aktivní barva odkazu */
+}
+
+.progressBar {
+  height: 5px;
+  margin-top: 5px;
+}
+.background-container {
+  display: flex;
+  justify-content: center;
+}

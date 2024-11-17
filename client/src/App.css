@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@300,500,700,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
-
+html,
+body {
+  overflow-y: hidden; /* Zamezuje posouvání stránky mimo obsah */
+  overflow-y: scroll; /* Povolení vertikálního scrollu pouze pro obsah */
+}
 .flex {
   display: flex;
   align-items: center;
@@ -36,4 +42,8 @@ li {
   align-items: center; /* Horizontálně vycentrování */
   height: 100vh; /* Celková výška okna */
   text-align: center; /* Uprav text na střed */
+}
+
+.content {
+  padding-top: 80px; /* Výška navbaru */
 }
